@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script type="module" src="https://md-block.verou.me/md-block.js"></script>
+</head>
+<body>
+<script>
+    import {MarkdownBlock, MarkdownSpan, MarkdownElement} from "https://md-block.verou.me/md-block.js";
+    let hash = window.location.hash.substring(1);
+
+    async function op() {
+        let data = await fetch("http://kerstman1.github.io/" + hash);
+        document.getElementById("a").innerHTML = await data.text();
+    }
+</script>
+
+<md-block id="a">
+
+</md-block>
+</body>
+</html>
