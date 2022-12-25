@@ -10,7 +10,7 @@
     let hash = window.location.hash.substring(1);
     
     async function op() {
-        let data = await fetch("http://kerstman1.github.io/" + hash);
+        let data = await fetch("https://kerstman1.github.io/" + hash);
         document.getElementById("a").innerHTML = await data.text();
     }
     
