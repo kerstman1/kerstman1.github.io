@@ -1,24 +1,6 @@
-<!DOCTYPE html>
-<html lang="nl">
+﻿<h1 id="kerst-middag">Kerst Middag</h1>
+<p>Het was een zondag middag. Iedereen zat gezellig rond de kerstboom.<br>
+Maar wat hoor je daar? Dit klinkt als gevaar!</p>
+<p><a href="https://kerstman1.github.io/bekijken.html">Kijk naar wat er aan de hand is.</a><br>
+<a href="https://kerstman1.github.io/verstoppen.html">Verstop je onder de boom.</a></p>
 
-<head>
-    <script type="module" src="https://md-block.verou.me/md-block.js"></script>
-    <title>Choose your own Christmas Adventure</title>
-</head>
-<body>
-<script>
-    let hash = window.location.hash.substring(1);
-    
-    async function op() {
-        let data = await fetch("https://kerstman1.github.io/" + hash);
-        document.getElementById("a").innerHTML = await data.text();
-    }
-    
-    op();
-</script>
-
-<md-block id="a">
-
-</md-block>
-</body>
-</html>
